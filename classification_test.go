@@ -74,7 +74,7 @@ func TestLiveClassification_JSONAndTrace(t *testing.T) {
 				t.Fatal(err)
 			}
 			var decoded State
-			if err := json.Unmarshal(encoded, &decoded); err != nil {
+			if err = json.Unmarshal(encoded, &decoded); err != nil {
 				t.Fatal(err)
 			}
 			if !reflect.DeepEqual(decoded, tc.state) {
