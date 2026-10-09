@@ -1,5 +1,21 @@
 # go-reflexes
 
+## Moved to substrate
+
+This standalone repository is deprecated. New development lives in the
+[`github.com/hollis-labs/substrate/agent`](https://github.com/hollis-labs/substrate/tree/agent/v0.2.0/agent)
+module, released as **`agent/v0.2.0`**.
+
+```sh
+go get github.com/hollis-labs/substrate/agent@v0.2.0
+```
+
+Follow the [package and API migration guide](https://github.com/hollis-labs/substrate/blob/agent/v0.2.0/agent/reflexes/MIGRATION.md) when updating imports;
+the consolidation can include API changes. Existing standalone tags and history
+are preserved. The documentation below describes the standalone releases and
+is retained for historical reference. Applications migrate separately; this
+redirect does not deploy or update any consumer.
+
 A database-agnostic sense, integrate, act steering engine: Nanite's reflex
 engine as a standalone library. A reflex is a JSON trigger (predicate, event
 or interval) over a windowed `State` plus an action of a named kind. The
